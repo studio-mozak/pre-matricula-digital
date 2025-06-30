@@ -3,6 +3,7 @@ name: Tests UI
 on:
   push:
     branches:
+      - 2.*
       - main
   pull_request:
     paths:

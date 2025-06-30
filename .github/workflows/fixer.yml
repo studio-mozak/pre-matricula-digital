@@ -3,6 +3,7 @@ name: Fixer
 on:
   push:
     branches:
+      - 2.*
       - main
 
 jobs:
