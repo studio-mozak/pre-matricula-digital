@@ -13,6 +13,10 @@ uses(GraphQLTestCase::class);
 uses(CreateSimpleProcess::class);
 uses(OnlyNumbers::class);
 
+beforeEach(function () {
+    config()->set('prematricula.legacy', true);
+});
+
 test('link external person by `CPF`', function () {
     $this->createOpenedProcess();
     $this->addWaitingListPeriod();
