@@ -10,7 +10,11 @@ return new class extends Migration
     public function up(): void
     {
         /** @var LegacyInstitution $institution */
-        $institution = app(LegacyInstitution::class);
+        $institution = LegacyInstitution::query()->where('ativo', 1)->first();
+
+        if (empty($institution)) {
+            return;
+        }
 
         Setting::query()->updateOrCreate([
             'key' => 'prematricula.token',
