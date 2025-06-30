@@ -55,6 +55,7 @@ jobs:
       QUEUE_CONNECTION: sync
       LOG_CHANNEL: null
       LEGACY_SEED_DATA: false
+      PMD_LEGACY: false
 
     services:
       postgres:
