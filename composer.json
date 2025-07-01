@@ -19,7 +19,6 @@
     "require-dev": {
         "haydenpierce/class-finder": "^0.5.2",
         "orchestra/testbench": "^10.0",
-        "doctrine/dbal": "^3.3",
         "laravel/pint": "^1.22",
         "pestphp/pest": "^3.0"
     },
