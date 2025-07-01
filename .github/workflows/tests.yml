@@ -77,8 +77,7 @@ jobs:
       - name: Checkout i-Educar
         uses: actions/checkout@v2
         with:
-          repository: portabilis/i-educar-portabilis
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          repository: portabilis/i-educar
 
       - name: Checkout Pré-matrícula
         uses: actions/checkout@v2
