@@ -7,8 +7,7 @@
       to="/"
       class="navbar-brand font-size-title-pmd-xs-16 flex-grow-lg-1 pl-0 pl-lg-4"
     >
-      <icon />
-      Pré-matrícula Digital
+      <img :src="getLogo" alt="getLogo" width="150">
     </router-link>
     <x-btn
       v-tooltip.bottom="'Abrir Menu'"
@@ -34,13 +33,16 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
-import Icon from '@/components/Icon.vue';
 import PrivateMenu from '@/components/elements/PrivateMenu.vue';
 import PrivateMenuDesktop from '@/components/elements/PrivateMenuDesktop.vue';
 import PublicMenu from '@/components/elements/PublicMenu.vue';
 import XBtn from '@/components/elements/buttons/XBtn.vue';
 import { useGeneralStore } from '@/store/general';
 import { useRoute } from 'vue-router';
+
+const getLogo = computed(() =>
+  new URL('/assets/img/logo_ensinus.svg', import.meta.url).href
+);
 
 const route = useRoute();
 
