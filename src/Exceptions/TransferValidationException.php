@@ -41,7 +41,7 @@ class TransferValidationException extends Exception implements ClientAware, Prov
 
     public static function activeTransferRequest(LegacyRegistration $registration)
     {
-        $message = sprintf('O(a) aluno(a) <strong>%s</strong> já possuí uma solicitação de transferência ativa para o ano letivo no i-Educar', $registration->name);
+        $message = sprintf('O(a) aluno(a) <strong>%s</strong> já possuí uma solicitação de transferência ativa para o ano letivo no Ensinus', $registration->name);
 
         return new static($registration, $message, self::ERROR_TRANSFER_EXISTS);
     }

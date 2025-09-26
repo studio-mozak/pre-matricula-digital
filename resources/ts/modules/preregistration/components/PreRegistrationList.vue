@@ -392,11 +392,11 @@
             "
             v-model="reportOptions.disregardStudentsIeducar"
             v-tooltip.start-bottom="
-              'Marque esta opção se, além de o relatório considerar apenas os alunos com situação \'Em espera\', também seja necessária uma validação no i-Educar para também desconsiderar alunos com matricula ativa no ano do processo'
+              'Marque esta opção se, além de o relatório considerar apenas os alunos com situação \'Em espera\', também seja necessária uma validação no Ensinus para também desconsiderar alunos com matricula ativa no ano do processo'
             "
             name="disregardStudentsIeducar"
             container-class="col-12 form-group"
-            label="Desconsiderar alunos com matrícula ativa no i-Educar?"
+            label="Desconsiderar alunos com matrícula ativa no Ensinus?"
             type="CHECKBOX"
           />
         </div>

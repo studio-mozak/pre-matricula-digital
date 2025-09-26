@@ -136,15 +136,15 @@ const getTitle = (type: string, payload: object): string => {
     case 'student-responsible-address-updated':
       return `<strong>${userName}</strong> atualizou o <strong>endereço</strong> do responsável`;
     case 'preregistration-external-system-address-updated':
-      return `<strong>${userName}</strong> atualizou o <strong>endereço</strong> no i-Educar`;
+      return `<strong>${userName}</strong> atualizou o <strong>endereço</strong> no Ensinus`;
     case 'preregistration-external-system-phones-updated':
-      return `<strong>${userName}</strong> atualizou os <strong>telefones</strong> no i-Educar`;
+      return `<strong>${userName}</strong> atualizou os <strong>telefones</strong> no Ensinus`;
     case 'preregistration-external-system-individual-updated':
-      return `<strong>${userName}</strong> atualizou o <strong>aluno</strong> no i-Educar`;
+      return `<strong>${userName}</strong> atualizou o <strong>aluno</strong> no Ensinus`;
     case 'preregistration-external-system-documents-updated':
-      return `<strong>${userName}</strong> atualizou os <strong>documentos</strong> no i-Educar`;
+      return `<strong>${userName}</strong> atualizou os <strong>documentos</strong> no Ensinus`;
     case 'preregistration-external-system-name-updated':
-      return `<strong>${userName}</strong> atualizou o <strong>nome</strong> no i-Educar`;
+      return `<strong>${userName}</strong> atualizou o <strong>nome</strong> no Ensinus`;
     case 'preregistration-updated':
       return `<strong>${userName}</strong> atualizou a <strong>pré-matrícula</strong>`;
     case 'preregistration-student-responsible-updated':
