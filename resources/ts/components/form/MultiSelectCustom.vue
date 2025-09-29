@@ -120,7 +120,7 @@ export default defineComponent({
   color: #787878 !important;
 }
 .multiselect-option.is-selected {
-  background: #0072ff !important;
+  background: #19324e !important;
 }
 .multiselect-search {
   border-radius: 8px !important;

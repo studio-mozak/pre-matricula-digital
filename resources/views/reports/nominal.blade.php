@@ -123,7 +123,7 @@
             <tbody>
             <tr class="uppercase v-align-top">
                 <td style="padding: 5pt;" colspan="7" class="text-right">
-                    <strong style="color: #0072ff">
+                    <strong style="color: #19324e">
                         OBSERVAÇÕES
                     </strong>
                     <br><br>
