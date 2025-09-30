@@ -28,8 +28,8 @@
         <div v-if="step === 'SYNC'" class="mt-4 font-weight-bold">
           Encontramos diferenças entre as informações fornecidas na inscrição e
           as já registradas no
-          <span style="white-space: nowrap">i-Educar</span>. Por favor,
-          selecione quais informações você gostaria de atualizar no i-Educar.
+          <span style="white-space: nowrap">Ensinus</span>. Por favor,
+          selecione quais informações você gostaria de atualizar no Ensinus.
         </div>
         <div
           v-if="['ACCEPT', 'SHOW'].includes(step) && updatedInExternalSystem"
@@ -59,7 +59,7 @@
               />
             </svg>
             <span class="ml-3">
-              Informações de cadastro atualizadas no i-Educar!
+              Informações de cadastro atualizadas no Ensinus!
             </span>
           </div>
         </div>
@@ -126,7 +126,7 @@
           <div class="col-12">
             <div class="d-flex">
               <div class="font-hind text-primary font-weight-bold col-4 p-3">
-                Registro no i-Educar
+                Registro no Ensinus
               </div>
               <div
                 class="font-hind text-primary font-weight-bold col-4 p-3 bg-white"
@@ -984,7 +984,7 @@ const updateExternalSystem = () => {
       if (!success) {
         showError.value = true;
         errorTitle.value = 'Erro';
-        error.value = 'Não foi possível atualizar as informações no i-Educar';
+        error.value = 'Não foi possível atualizar as informações no Ensinus';
         return;
       }
 

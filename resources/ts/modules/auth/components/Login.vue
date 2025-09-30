@@ -32,7 +32,7 @@ loader(AuthRest.getAuth)
       O login de acesso no <strong>Pré-matrícula Digital</strong> é exclusivo para secretários e diretores escolares,
       ou gestores da Secretaria de Educação.
       <br>
-      No momento, para acessar o sistema você deve estar logado no i-Educar.
+      No momento, para acessar o sistema você deve estar logado no Ensinus.
     `;
   });
 </script>

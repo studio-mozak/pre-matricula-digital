@@ -62,7 +62,7 @@ class EnrollmentValidationException extends Exception implements ClientAware, Pr
 
     public static function existingEnrollment(PreRegistration $preregistration)
     {
-        $message = sprintf('O(a) aluno(a) <strong>%s</strong> já possuí uma enturmação ativa para o ano letivo no i-Educar', $preregistration->student->name);
+        $message = sprintf('O(a) aluno(a) <strong>%s</strong> já possuí uma enturmação ativa para o ano letivo no Ensinus', $preregistration->student->name);
 
         return new static($preregistration, $message, self::ERROR_EXISTING_ENROLLMENT);
     }

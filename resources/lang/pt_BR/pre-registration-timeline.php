@@ -56,7 +56,7 @@ return [
         'responsible_id' => 'Responsável',
 
         // Campos de sistema externo
-        'external_person_id' => 'Pessoa no i-Educar',
+        'external_person_id' => 'Pessoa no Ensinus',
         'in_classroom_id' => 'Turma de Ingresso',
 
         // Campos de tipo

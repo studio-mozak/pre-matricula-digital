@@ -93,8 +93,8 @@
               v-if="['REGISTRATION', 'WAITING_LIST'].includes(stages[i].type)"
               v-model="stages[i].allowSearch"
               container-class="col-12 form-group"
-              label="Permitir buscar por cadastros do i-Educar"
-              sub-label="Possibilitará buscar pelo aluno no i-Educar para reaproveitar os dados"
+              label="Permitir buscar por cadastros do Ensinus"
+              sub-label="Possibilitará buscar pelo aluno no Ensinus para reaproveitar os dados"
               :name="`stages[${i}].allowSearch`"
               type="CHECKBOX"
               :errors="!!errors[`stages[${i}].allowSearch`]"
@@ -155,7 +155,7 @@
               <p>
                 O tipo de período 'Rematrícula' irá validar a compatibilidade de
                 rematrícula, ou seja, validações de compatibilidade com os dados
-                existentes no i-Educar permitindo a rematrícula somente de
+                existentes no Ensinus permitindo a rematrícula somente de
                 alunos que já estudam na rede.
               </p>
             </div>

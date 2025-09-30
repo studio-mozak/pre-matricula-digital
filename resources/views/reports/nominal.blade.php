@@ -128,7 +128,7 @@
                     </strong>
                     <br><br>
                     Se algum dos CPF's listados nesse relatório possuir uma matrícula ativa, com mesmo ano e com status
-                    CURSANDO no i-Educar as pré-matrículas foram desconsideradas.
+                    CURSANDO no Ensinus as pré-matrículas foram desconsideradas.
                 </td>
             </tr>
             </tbody>
