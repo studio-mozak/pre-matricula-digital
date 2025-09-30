@@ -118,12 +118,12 @@
             }
 
             .table-default thead {
-                border-bottom: 2pt solid #0072ff !important;
+                border-bottom: 2pt solid #19324e !important;
                 background-color: #ffffff;
             }
 
             .table-default tfoot td {
-                border-top: 2pt solid #0072ff !important;
+                border-top: 2pt solid #19324e !important;
                 background-color: #ffffff;
             }
 
@@ -143,7 +143,7 @@
 
             .title {
                 font-size: 16pt;
-                color: #0072ff
+                color: #19324e
             }
 
             .text-center {
@@ -236,11 +236,11 @@
     <body>
         <table class="table">
             <tr>
-                <td class="text-center p-8 w-1" style="border-right: 5pt solid #0072ff">
+                <td class="text-center p-8 w-1" style="border-right: 5pt solid #19324e">
                     <div class="logo"></div>
                 </td>
                 <td class="uppercase pb-10 mb-10 pl-15 pt-30" style="padding-left: 15pt">
-                    <h3 style="color: #0072ff">
+                    <h3 style="color: #19324e">
                         {{ mb_strtoupper($institution['nm_instituicao']) }}
                     </h3>
                     <br>

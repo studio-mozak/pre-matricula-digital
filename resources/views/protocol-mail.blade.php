@@ -78,7 +78,7 @@
                           <td>
                             <strong style="font-size: 24px;">#{{ $preregistration->protocol }}</strong>
                             @if($preregistration->isRegistration())
-                            <span style="margin-left: 10px; padding: 4px 8px 2px; border-radius: 8px; background: gray; font-size: 14px; text-transform: uppercase; background: #e7f2ff; border: 1px solid #0072ff; color: #0072ff; vertical-align: middle;">
+                            <span style="margin-left: 10px; padding: 4px 8px 2px; border-radius: 8px; background: gray; font-size: 14px; text-transform: uppercase; background: #e7f2ff; border: 1px solid #19324e; color: #19324e; vertical-align: middle;">
                               Matrícula
                             </span>
                             @endif

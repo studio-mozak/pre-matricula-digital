@@ -17,7 +17,7 @@ class ConfigController
     public function config()
     {
         $config = [
-            'city' => config('prematricula.city'),
+            'city' => config('prematricula.city_demo'), //prematricula.city
             'state' => config('prematricula.state'),
             'ibge_codes' => config('prematricula.ibge_codes'),
             'map' => [

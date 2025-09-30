@@ -14,7 +14,7 @@ return [
 
     'ibge_codes' => env('PMD_IBGE_CODES', ''),
 
-    'city' => env('PMD_CITY', 'Içara'),
+    'city_demo' => env('PMD_CITY', 'Demo'),
 
     'state' => env('PMD_STATE', 'SC'),
 

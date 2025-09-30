@@ -9,7 +9,7 @@
       </router-view>
     </main>
     <footer id="footer" class="pt-5 pb-5 text-center text-muted small">
-      © {{ year }} Portábilis - Todos os direitos reservados
+      © {{ year }} Ensinus - Todos os direitos reservados
     </footer>
   </div>
 </template>
