@@ -19,6 +19,6 @@ declare module 'v-tooltip';
 declare module 'vue-the-mask';
 declare module 'vue-flatpickr-component';
 declare module 'vue-select';
-declare module 'froala-editor';
+declare module '@ckeditor/ckeditor5-vue';
 declare module '@analytics/google-tag-manager';
 declare module 'honeybadger-vue3-composition-api';

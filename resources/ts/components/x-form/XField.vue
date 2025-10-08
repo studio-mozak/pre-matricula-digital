@@ -82,7 +82,7 @@
     </template>
 
     <template v-if="type === 'RICH_TEXT'">
-      <input-froala
+      <Editor
         v-model:data="model"
         v-bind="field"
         :class="{ 'is-invalid': errors }"
@@ -360,7 +360,6 @@ import { genders, maritalStatuses } from '@/util';
 import InputBirthCertificate from '@/components/form/InputBirthCertificate.vue';
 import InputCpf from '@/components/form/InputCpf.vue';
 import InputDate from '@/components/form/InputDate.vue';
-import InputFroala from '@/components/form/InputFroala.vue';
 import InputHour from '@/components/form/InputHour.vue';
 import InputPhone from '@/components/form/InputPhone.vue';
 import InputPostalCode from '@/components/form/InputPostalCode.vue';
@@ -371,6 +370,7 @@ import XSelectCities from '@/components/form/XSelectCities.vue';
 import XSpinner from '@/components/loaders/XSpinner.vue';
 import { mask } from 'vue-the-mask';
 import { useVModel } from '@vueuse/core';
+import Editor from '../Editor.vue';
 export default defineComponent({
   components: {
     Field,
@@ -382,8 +382,8 @@ export default defineComponent({
     InputRg,
     InputPhone,
     InputPostalCode,
-    InputFroala,
     MultiSelectCustom,
+    Editor,
     XSpinner,
     XSelect,
     XSelectCities,
