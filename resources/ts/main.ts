@@ -12,6 +12,7 @@ import filters from '@/filters';
 import { registerComponents } from '@/components';
 import router from '@/router';
 import store from '@/store';
+import CKEditor from '@ckeditor/ckeditor5-vue';
 
 const app = createApp(RouterView);
 
@@ -20,6 +21,8 @@ app.use(router);
 app.use(store);
 
 app.use(VTooltip);
+
+app.use(CKEditor);
 
 app.provide('$filters', filters);
 

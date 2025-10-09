@@ -1,5 +1,5 @@
 <script>
-import FroalaEditor from 'froala-editor';
+import { Ckeditor } from '@ckeditor/ckeditor5-vue'
 import { h } from 'vue';
 export default {
   // eslint-disable-next-line vue/require-prop-types
@@ -73,7 +73,7 @@ export default {
       // Bind editor events.
       this.registerEvents();
       this.initListeners();
-      this.f_editor = new FroalaEditor(this.$el, this.currentConfig);
+      this.f_editor = new CKEditor(this.$el, this.currentConfig);
       this.editorInitialized = true;
     },
     // Return clone object
