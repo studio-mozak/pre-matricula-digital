@@ -82,7 +82,7 @@
     </template>
 
     <template v-if="type === 'RICH_TEXT'">
-      <Editor
+      <InputCkeditor
         v-model:data="model"
         v-bind="field"
         :class="{ 'is-invalid': errors }"
@@ -370,7 +370,7 @@ import XSelectCities from '@/components/form/XSelectCities.vue';
 import XSpinner from '@/components/loaders/XSpinner.vue';
 import { mask } from 'vue-the-mask';
 import { useVModel } from '@vueuse/core';
-import Editor from '../Editor.vue';
+import InputCkeditor from '../form/InputCkeditor.vue';
 export default defineComponent({
   components: {
     Field,
@@ -383,7 +383,7 @@ export default defineComponent({
     InputPhone,
     InputPostalCode,
     MultiSelectCustom,
-    Editor,
+    InputCkeditor,
     XSpinner,
     XSelect,
     XSelectCities,

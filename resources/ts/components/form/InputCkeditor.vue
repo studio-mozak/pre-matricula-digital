@@ -1,55 +1,50 @@
 <template>
-  <CKEditor
-    :editor="Editor"
+  <VueCkeditor
     v-model="model"
-    :config="editorConfig"
+    v-bind="$attrs"
+    :config="mergedConfig"
+    :disabled="disabled"
   />
 </template>
 
 <script setup lang="ts">
-import { Ckeditor, useCKEditorCloud } from '@ckeditor/ckeditor5-vue'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
-import { useVModel } from '@vueuse/core'
 import { computed } from 'vue'
+import { useVModel } from '@vueuse/core'
+import VueCkeditor from '@/components/form/VueCkeditor.vue'
+import { ModelValue, Indexable } from '@/types'
 
 const props = withDefaults(
   defineProps<{
-    data?: string
+    data?: ModelValue
     placeholder?: string
-    config?: Record<string, any>
-    name?: string
+    config?: Indexable
+    name: string
     disabled?: boolean
   }>(),
   {
     data: '',
-    placeholder: 'Adicione sua mensagem aqui',
+    placeholder: 'Adicione sua mensagem aqui.',
     config: () => ({}),
     disabled: false,
   }
 )
 
-const model = useVModel(props, 'data') // habilita v-model:data
-const Editor = ClassicEditor
+const model = useVModel(props, 'data')
 
 const defaultConfig = {
   placeholder: props.placeholder,
-  // toolbar mínimo — ajuste depois se quiser
   toolbar: [
-    'bold', 'italic', 'underline', 'link',
-    '|', 'bulletedList', 'numberedList',
-    '|', 'undo', 'redo'
+    'heading', '|',
+    'bold', 'italic', 'underline', 'strikethrough', '|',
+    'alignment', '|',
+    'numberedList', 'bulletedList', 'outdent', 'indent', '|',
+    'link', 'blockQuote', 'insertTable', 'undo', 'redo'
   ],
+  licenseKey: 'GPL',
 }
 
-const editorConfig = computed(() => ({
+const mergedConfig = computed(() => ({
   ...defaultConfig,
   ...props.config,
 }))
 </script>
-
-<style>
-/* força altura mínima para garantir que apareça */
-.ck-editor__editable_inline {
-  min-height: 180px;
-}
-</style>
